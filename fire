@@ -1,0 +1,10 @@
+FROM scratch
+FROM centos
+MAINTAINER neil
+RUN yum update -y
+COPY testing /var/www/html
+
+EXPOSE 82
+
+CMD apachectl -D FOREGROUND
+
