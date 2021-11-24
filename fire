@@ -2,6 +2,7 @@ FROM scratch
 FROM centos
 MAINTAINER neil
 RUN yum update -y
+RUN yum install httpd -y
 COPY testing /var/www/html
 
 EXPOSE 82
