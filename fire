@@ -8,4 +8,4 @@ COPY testing /var/www/html
 EXPOSE 82
 
 CMD apachectl -D FOREGROUND
-
+Done guys!
